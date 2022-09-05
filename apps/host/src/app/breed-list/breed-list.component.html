@@ -1,0 +1,10 @@
+<div class="page-header">
+    Rabbit Breeds!!!
+</div>
+<p>I'm the host application. I'm using a remote application for displaying selected rabbit's info</p>
+
+<div class="page-content">
+    <div class="card-wrapper" *ngFor="let breed of breedsList" (click)="cardClick(breed.breed_id)">
+        <img src="{{breed.source}}" class="card-content">
+    </div>
+</div>

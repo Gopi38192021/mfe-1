@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RemoteWrapperComponent } from './remote-wrapper.component';
+import { BreedListComponent } from './breed-list.component';
 
-describe('RemoteWrapperComponent', () => {
-  let component: RemoteWrapperComponent;
-  let fixture: ComponentFixture<RemoteWrapperComponent>;
+describe('BreedListComponent', () => {
+  let component: BreedListComponent;
+  let fixture: ComponentFixture<BreedListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [RemoteWrapperComponent],
+      declarations: [BreedListComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(RemoteWrapperComponent);
+    fixture = TestBed.createComponent(BreedListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

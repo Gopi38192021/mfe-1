@@ -1,0 +1,43 @@
+.page-header {
+    position: relative;
+    height: 90px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-content {
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-wrapper {
+    width: 315px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 25px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.card-content:hover {
+    box-shadow: 20px 50px 50px 20px rgba(0,0,0,0.3);
+}
+
+.card-content {
+    width: inherit;
+    height: inherit;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}

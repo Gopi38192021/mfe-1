@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { RemoteWrapperComponent } from './remote-wrapper/remote-wrapper.component';
 import { loadRemoteModule } from '@angular-architects/module-federation';
+import { BreedListComponent } from './breed-list/breed-list.component';
 
 const routes: Routes = [
   {
-    path:'host',
-    component:RemoteWrapperComponent
+    path:'',
+    component: BreedListComponent
   },
   {
-    path:'remotes',
+    path:'breed-info/:id',
     loadChildren: () => loadRemoteModule({
       type: 'module',
       remoteEntry: 'http://localhost:4202/remoteEntry.js',
@@ -18,7 +18,7 @@ const routes: Routes = [
   })
   .then((m) =>{
     console.log(m);
-    return m.RemoteStubModule
+    return m.MicroBreedInfoModule
   })
   }
 ]
